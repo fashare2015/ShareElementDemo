@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.fashare.shareelementdemo.DetailActivity">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/iv_img"
+        android:transitionName="@string/iv_img_transitionName"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"
+        app:layout_behavior=".FollowBehavior"/>
+
+    <!--marginTop="iv_img的高度"-->
+    <ScrollView
+        android:id="@+id/sv_detail"
+        android:transitionName="@string/scrollview_detail_transitionName"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="150dp"
+        android:background="@android:color/white"
+        app:layout_behavior=".DragDismissBehavior">
 
-        <ImageView
-            android:id="@+id/iv_img"
-            android:transitionName="@string/iv_img_transitionName"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/colorAccent"/>
-
-        <android.support.v4.widget.NestedScrollView
-            android:transitionName="@string/scrollview_detail_transitionName"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white">
+            android:text="内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n"/>
-
-        </android.support.v4.widget.NestedScrollView>
-
-    </LinearLayout>
+    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>
