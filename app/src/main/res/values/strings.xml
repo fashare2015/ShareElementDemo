@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShareElementDemo</string>
+    <string name="iv_img_transitionName">iv_img_transitionName</string>
+    <string name="scrollview_detail_transitionName">scrollview_detail_transitionName</string>
+</resources>
