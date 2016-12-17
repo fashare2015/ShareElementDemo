@@ -1,11 +1,12 @@
+# shareElementDemo
+PS: 本来想研究“过场动画”，所以名字取成了`ShareElement`，其实是`Behavior`的Demo，不要在意这些细节。
+
 # 下拉回退 Activity，layout_behavior 还能这么玩？
----
 熟悉`layout_behavior`的朋友都知道，它是`CoordinatorLayout`的重要属性。不过，你该不会以为它只能用在`NestedScrollingChild`上吧？如果你真这么觉得，它可会很伤心的：人家才没有这么弱呢。
 其实它的能力远远不止这些。这里和大家分享一个 Demo 和心得。
 <br/>
 
 #效果图
----
 这次仿的是“下拉回退”效果，来自 https://github.com/nickbutcher/plaid，
 这个项目有必要学习一下，堪称神交互。
 
@@ -18,15 +19,11 @@
 
 <br/>
 
-#源码
----
-本来想研究“过场动画”，所以名字取成了`ShareElement`，其实是`Behavior`的Demo，不要在意这些细节。
-
-https://github.com/fashare2015/ShareElementDemo
+#CSDN链接
+http://blog.csdn.net/a153614131/article/details/53709596
 <br/>
 
 #灵感来源
----
 ##BottomSheetBehavior
 >之前在掘金上发了处女作——[Android 简易悬停抽屉控件 —— 仿知乎收藏夹](https://gold.xitu.io/entry/5852342f128fe100697fa9b4/detail)。结果分分钟被打脸，这分明就有官方控件啊orz。百度了才知道`support`包里有这玩意——`BottomSheetBehavior`。也正感谢它，有了今天这篇博客。
 
@@ -51,7 +48,6 @@ https://github.com/fashare2015/ShareElementDemo
 <br/>
 
 ＃实现
----
 `Plaid`里面是通过`自定义View`来实现，那我这里呢用`Behavior`试一下，能更好的复用。
 
 ##Behavior 的接口
@@ -98,7 +94,6 @@ https://github.com/fashare2015/ShareElementDemo
 ```
 <br/>
 ##代码实现
----
 主要有这几块：
 
 - 事件分发：用`mViewDragHelper`处理拖动事件，参考：
