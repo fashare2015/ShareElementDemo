@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.fashare.shareelementdemo.DetailActivity">
+    android:background="#80000000"
+    tools:context="com.fashare.shareelementdemo.detail.DetailActivity">
 
     <ImageView
         android:id="@+id/iv_img"
@@ -14,23 +15,17 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:background="@color/colorAccent"
-        app:layout_behavior=".FollowBehavior"/>
+        app:layout_behavior=".behavior.FollowBehavior"/>
 
     <!--marginTop="iv_img的高度"-->
-    <ScrollView
-        android:id="@+id/sv_detail"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_detail"
         android:transitionName="@string/scrollview_detail_transitionName"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
         android:background="@android:color/white"
-        app:layout_behavior=".DragDismissBehavior">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n"/>
-
-    </ScrollView>
+        app:layout_behavior=".behavior.DragDismissBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>

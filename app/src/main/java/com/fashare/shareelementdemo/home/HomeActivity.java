@@ -1,9 +1,12 @@
-package com.fashare.shareelementdemo;
+package com.fashare.shareelementdemo.home;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+
+import com.fashare.shareelementdemo.R;
+import com.fashare.shareelementdemo.widget.SpaceItemDecoration;
 
 import java.util.Arrays;
 
@@ -27,10 +30,9 @@ public class HomeActivity extends AppCompatActivity {
 
     private void initView() {
         mRv.setAdapter(mAdapter = new HomeAdapter(this));
-//        mRv.setLayoutManager(new LinearLayoutManager(this));
         mRv.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         mRv.addItemDecoration(new SpaceItemDecoration(30));
 
-        mAdapter.setDataList(Arrays.asList("1", "2", "3"));
+        mAdapter.setDataList(Arrays.asList("1", "2", "3", "1", "2", "3", "1", "2", "3", "1", "2", "3"));
     }
 }

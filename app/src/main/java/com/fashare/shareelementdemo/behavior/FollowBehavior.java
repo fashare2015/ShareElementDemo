@@ -1,4 +1,4 @@
-package com.fashare.shareelementdemo;
+package com.fashare.shareelementdemo.behavior;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;
@@ -12,6 +12,8 @@ import android.view.View;
  * Date: 2016-12-16
  * Time: 21:16
  * <br/><br/>
+ *
+ * 一个 "紧贴联动" 的 Behavior
  */
 public class FollowBehavior extends CoordinatorLayout.Behavior<View> {
     public static final String TAG = "FollowBehavior";

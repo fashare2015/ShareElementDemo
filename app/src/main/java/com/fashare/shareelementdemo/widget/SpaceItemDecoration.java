@@ -1,4 +1,4 @@
-package com.fashare.shareelementdemo;
+package com.fashare.shareelementdemo.widget;
 
 import android.graphics.Canvas;
 import android.graphics.Rect;

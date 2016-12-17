@@ -1,4 +1,4 @@
-package com.fashare.shareelementdemo;
+package com.fashare.shareelementdemo.home;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.fashare.shareelementdemo.R;
+import com.fashare.shareelementdemo.detail.DetailActivity;
 
 import java.util.ArrayList;
 import java.util.List;
